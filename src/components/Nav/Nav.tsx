@@ -1,5 +1,5 @@
 import { styled, Button, Container } from '@mui/material';
-import Avatar from '../../assets/Logo.png';
+import Logo from '../../assets/Logo.png';
 import Telephone from '../../assets/Telephone.svg';
 import Whatsapp from '../../assets/Whatsapp.svg';
 import LoginIcon from '../../assets/LoginIcon.svg';
@@ -12,7 +12,7 @@ const Nav = () => {
   });
 
   const Graydiv = styled('div')({
-    backgroundColor: '#ccc',
+    backgroundColor: '#ddd',
     height: '40px',
   });
 
@@ -84,7 +84,7 @@ const Nav = () => {
           </StyledSpan>
         </Capsula>
 
-        <StyledImg src={Avatar} alt="Rodas & Motores" />
+        <StyledImg src={Logo} alt="Rodas & Motores" />
       </Container>
     </StyledNav>
   );

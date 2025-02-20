@@ -1,5 +1,6 @@
 import { styled } from '@mui/material';
 import Nav from '../components/Nav/Nav';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
   const StyledHome = styled('div')(() => ({
@@ -10,6 +11,7 @@ const Home = () => {
     <>
       <Nav />
       <StyledHome />
+      <Footer />
     </>
   );
 };
