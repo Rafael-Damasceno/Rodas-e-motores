@@ -19,13 +19,16 @@ const Footer = () => {
     margin: '10px',
   });
 
-  const StyledLink = styled('a')({
-    textDecoration: 'none',
-    color: '#4A51B0',
+  const StyledItem = styled('div')({
     display: 'flex',
     alignItems: 'center',
     gap: '8px',
-    margin: '10px 0 ',
+    margin: '10px 0',
+  });
+
+  const StyledLink = styled('a')({
+    textDecoration: 'none',
+    color: '#4A51B0',
   });
 
   const links = [
@@ -53,10 +56,12 @@ const Footer = () => {
         <Container>
           <StyledImg src={Logo} alt="" />
           {links.map(({ href, icon, text, size }, index) => (
-            <StyledLink key={index} href={href} target="_blank">
+            <StyledItem key={index}>
               <img src={icon} alt={text} width={size} height={size} />
-              {text}
-            </StyledLink>
+              <StyledLink href={href} target="_blank">
+                {text}
+              </StyledLink>
+            </StyledItem>
           ))}
         </Container>
       </StyledFooter>
