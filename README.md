@@ -1,10 +1,14 @@
 # 🚗 Rodas e Motores - Plataforma de Veículos
 
+![Preview](/.github/Preview.png)
+
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![MUI](https://img.shields.io/badge/Material_UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://mui.com/)
 
 Plataforma web para compra e venda de veículos usados, oferecendo uma experiência intuitiva para usuários e anunciantes.
+
+[Clique aqui para acessar](https://rodas-e-motores-gnvc2tp0k-rafaeldamascenos-projects.vercel.app)
 
 ## ✨ Funcionalidades Principais
 
