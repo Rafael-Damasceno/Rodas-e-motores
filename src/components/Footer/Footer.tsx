@@ -1,4 +1,5 @@
 import { Container, styled } from '@mui/material';
+import { Link } from 'react-router-dom';
 import Arrow from '../../assets/Arrow.svg';
 import Point from '../../assets/Point.svg';
 import Telephone from '../../assets/Telephone.svg';
@@ -12,11 +13,6 @@ const Footer = () => {
     textAlign: 'center',
     borderTop: '1px solid #ccc',
     marginTop: '20px',
-  });
-
-  const StyledImg = styled('img')({
-    display: 'flex',
-    margin: '10px',
   });
 
   const StyledItem = styled('div')({
@@ -54,11 +50,16 @@ const Footer = () => {
     <>
       <StyledFooter>
         <Container>
-          <StyledImg src={Logo} alt="" />
-          {links.map(({ href, icon, text, size }, index) => (
+          <div style={{ width: '150px' }}>
+            <Link to={'/'}>
+              <img src={Logo} alt="Logo" style={{ display: 'flex' }} />
+            </Link>
+          </div>
+
+          {links.map(({ icon, text, size }, index) => (
             <StyledItem key={index}>
               <img src={icon} alt={text} width={size} height={size} />
-              <StyledLink href={href} target="_blank">
+              <StyledLink href="" target="_blank">
                 {text}
               </StyledLink>
             </StyledItem>

@@ -5,8 +5,7 @@ import {
   Button,
   Typography,
 } from '@mui/material';
-import Nav from '../components/Nav/Nav';
-import Footer from '../components/Footer/Footer';
+
 import Background from '../assets/bike.png';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
@@ -63,7 +62,6 @@ const Home = () => {
 
   return (
     <>
-      <Nav />
       <StyledSearchContainer>
         <Container
           style={{
@@ -144,15 +142,24 @@ const Home = () => {
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
-          }}>
+          }}
+        >
           <img src={ArrowRight} alt="" />
-          <a href="" style={{textDecoration: 'none', color: '#5784B2', fontSize:'30px', fontWeight: 'lighter'}}>Veículos em destaque</a>
+          <a
+            href=""
+            style={{
+              textDecoration: 'none',
+              color: '#5784B2',
+              fontSize: '30px',
+              fontWeight: 'lighter',
+            }}
+          >
+            Veículos em destaque
+          </a>
         </div>
       </Container>
       <Carrosel />
       <Ad />
-
-      <Footer />
     </>
   );
 };
